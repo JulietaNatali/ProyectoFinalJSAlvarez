@@ -1,0 +1,221 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif; }
+  * a {
+    text-decoration: none;
+    color: black; }
+
+header {
+  background-color: #945c84;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem;
+  width: 100%;
+  height: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1); }
+  header img {
+    width: 50%; }
+  header .carrito {
+    color: wheat; }
+
+.main_titulo {
+  background-color: #f4748c;
+  position: sticky;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .main_titulo .box_titulo {
+    margin: 40px;
+    display: flex;
+    align-items: center; }
+    .main_titulo .box_titulo .titulo {
+      font-size: 1.5rem;
+      color: white;
+      font-family: "Roboto Condensed", sans-serif;
+      margin: 0; }
+    .main_titulo .box_titulo .boton_atras {
+      color: white;
+      width: 30px;
+      margin-right: 10px;
+      margin-right: 30px; }
+
+
+.seccion_productos .box_productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center; }
+  .seccion_productos .box_productos .producto {
+    width: 80%;
+    height: 110px;
+    margin: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100px 1fr 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    overflow: hidden; }
+    .seccion_productos .box_productos .producto .producto_img {
+      height: 100%; }
+      .seccion_productos .box_productos .producto .producto_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .seccion_productos .box_productos .producto .producto_text {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 12px; }
+      .seccion_productos .box_productos .producto .producto_text .producto_name {
+        font-size: 16px;
+        width: 100%;
+        margin: 0%; }
+      .seccion_productos .box_productos .producto .producto_text .producto_price {
+        font-size: 18px;
+        color: #f4748c;
+        font-weight: bold;
+        width: 100%;
+        text-align: end;
+        margin: 0%; }
+  .seccion_productos .box_productos .producto_icono {
+    background-color: #fcd484;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seccion_detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .seccion_detalle .box_detalle {
+    width: 80%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .seccion_detalle .box_detalle .detalle_img {
+      width: 50%; }
+      .seccion_detalle .box_detalle .detalle_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .seccion_detalle .box_detalle .detalle_desc {
+      text-align: center;
+      padding: 20px; }
+  .seccion_detalle .pie_detalle {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .seccion_detalle .pie_detalle .box_cantidad {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .seccion_detalle .pie_detalle .box_cantidad .btn_detalle {
+        color: #f4748c;
+        cursor: pointer; }
+      .seccion_detalle .pie_detalle .box_cantidad .cantidad_detalle {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0%; }
+    .seccion_detalle .pie_detalle .btn_agregar {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 30%;
+      background-color: #fcd484;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+      .seccion_detalle .pie_detalle .btn_agregar p {
+        margin: 0%; }
+
+
+.categorias .box_categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center; }
+  .categorias .box_categorias .contenido_cat {
+    width: 80%;
+    height: 110px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer; }
+    .categorias .box_categorias .contenido_cat p {
+      text-align: center;
+      font-size: 23px;
+      color: white;
+      font-weight: bold; }
+  .categorias .box_categorias .clasicas {
+    background-image: url(../img/clasicas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .categorias .box_categorias .premium {
+    background-image: url(../img/premium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .categorias .box_categorias .combos {
+    background-image: url(../img/combos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .categorias .box_categorias .rellenas {
+    background-image: url(../img/rellenas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+
+.seccion_productos .box_productos .vacio {
+  padding: 30px; }
+  .seccion_productos .box_productos .vacio p {
+    color: black;
+    text-align: center; }
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: white; }
+  footer .pedido {
+    margin: 12px; }
+    footer .pedido_total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      font-weight: bolder;
+      margin: 0;
+      font-size: 1rem; }
+      footer .pedido_total p {
+        margin: 0;
+        padding: 5px; }
+      footer .pedido_total .pedido_precio {
+        font-size: 1.4rem; }
+    footer .pedido_confirmar {
+      color: white;
+      background-color: #f4748c;
+      text-align: center;
+      font-weight: bolder;
+      padding: 12px;
+      margin: 0; }

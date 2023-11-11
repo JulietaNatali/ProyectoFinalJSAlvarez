@@ -1,0 +1,50 @@
+.seccion_productos {
+    .box_productos {
+        .vacio{
+            padding: 30px;
+            p {
+                color: $color-secundario;
+                text-align: center;
+            }
+        }
+    }
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    
+    .pedido {
+        margin: 12px;
+        &_total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $color-secundario;
+            font-weight: bolder;
+            margin: 0;
+            font-size: 1rem;
+
+            p {
+                margin: 0;
+                padding: 5px;
+            }
+            .pedido_precio {
+                font-size: 1.4rem;
+            }
+            #confirmar {
+                cursor: pointer;
+            }
+        }
+
+        &_confirmar {
+            color: white;
+            background-color: $color-rosa;
+            text-align: center;
+            font-weight: bolder;
+            padding: 12px;
+            margin: 0;
+        }
+    }
+}

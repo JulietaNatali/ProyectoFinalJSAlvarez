@@ -1,0 +1,72 @@
+.seccion_detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .box_detalle{
+        width: 80%;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        .detalle_img {
+            width: 50%;
+
+            img {
+                @include medidas-img
+            }
+        }
+
+        .detalle_desc {
+            text-align: center;
+            padding: 20px;
+        }
+        
+    }
+    .pie_detalle {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .box_cantidad {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn_detalle {
+                color: $color-rosa;
+                cursor: pointer;
+            }
+            .cantidad_detalle {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                width: 50px;
+                text-align: center;
+                font-size: 1.5rem;
+                margin: 0%;
+            }
+            
+        }
+
+        .btn_agregar {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 30%;
+            background-color: $color-naranja;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            p {
+                margin: 0%;
+            }
+        }
+    }
+}

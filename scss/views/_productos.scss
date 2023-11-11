@@ -1,0 +1,55 @@
+
+.seccion_productos {
+    .box_productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-items: center;
+    
+        .producto {
+            width: 80%;
+            height: 110px;
+            margin: 20px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 100px 1fr 50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+            overflow: hidden;
+        
+            .producto_img{
+                height: 100%;
+                
+                img {
+                    @include medidas-img
+                }
+            }
+            .producto_text {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 12px;
+        
+                .producto_name {
+                    font-size: 16px;
+                    width: 100%;
+                    margin: 0%;
+                }
+        
+                .producto_price {
+                    font-size: 18px;
+                    color: $color-rosa;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: end;
+                    margin: 0%;
+                }
+            }
+        }
+        .producto_icono{
+            background-color: $color-naranja;
+            color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

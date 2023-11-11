@@ -1,0 +1,43 @@
+.categorias {
+
+    .box_categorias {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-items: center; 
+
+        .contenido_cat {
+            width: 80%;
+            height: 110px;
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer; 
+
+            p {
+                text-align: center;
+                font-size: 23px;
+                color: $color_principal;
+                font-weight: bold;
+            }
+        }
+        .clasicas{
+            background-image: url(../img/clasicas.jpg);
+            @include background;
+        }
+        .premium{
+            background-image: url(../img/premium.jpg);
+            @include background;
+        }
+        .combos{
+            background-image: url(../img/combos.jpg);
+            @include background;
+        }
+        .rellenas{
+            background-image: url(../img/rellenas.jpg);
+            @include background;
+        }
+    }
+}
